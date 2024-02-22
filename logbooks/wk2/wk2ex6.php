@@ -10,4 +10,4 @@
     echo "Index 4 = $marks[4] <br/>?";
     echo "Index 5 = $marks[5] <br/>?";
 
-    //will need to check where my error, doesn't run correctly
+    //will need to check where my error, doesn't run correctly. Do I just add additional bit to the top part?
