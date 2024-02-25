@@ -1,6 +1,8 @@
 <html>
     <head><title>Select colour page</title></head>
-    
+    <?php $cookieName = "selqty";
+    setcookie($cookieName, $_POST["selqty"]);
+    ?>
     <body>
             <form action="confirmation.php"  method="post">
 	            Select the colour for the <?php echo $_POST["selqty"] ?> widgets you are ordering
@@ -13,8 +15,6 @@
                     </select>
                 <br/><br/>
 
-                    <input type="hidden" name="selqty"
-                        value="<?php echo $_POST["selqty"]?>"/>
                     <input type="submit" value="Buy"/>
                     
             </form>
