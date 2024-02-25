@@ -12,7 +12,11 @@
 	                    <option>blue</option>
                     </select>
                 <br/><br/>
+
+                    <input type="hidden" name="selqty"
+                        value="<?php echo $_POST["selqty"]?>"/>
                     <input type="submit" value="Buy"/>
+                    
             </form>
 
     </body>
