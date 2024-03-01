@@ -6,7 +6,7 @@
 	            Select the colour for the <?php echo $_POST["selqty"] ?> widgets you are ordering
    	            <?php
                     $_SESSION["qty"] = (float)$_POST["selqty"];
-                    $_SESSION["price"] = (float)$_POST["txtprice"];
+                    $_SESSION["price"] = (float)$_POST["selsize"];
                     ?>
                 <select name="selcolour">
    	                    <option>white</option>
@@ -16,6 +16,7 @@
 	                    <option>blue</option>
                     </select>
                 <br/><br/>
+
 
                 <input type="submit" value="Buy"/>
                     
