@@ -3,10 +3,9 @@
     <?php session_start(); ?>
     <body>
             <form action="confirmation.php"  method="post">
-	            Select the colour for the <?php echo $_POST["selqty"] ?> widgets you are ordering
+	            Select the colour for the <?php echo $_SESSION["qty"] ?> widgets you are ordering
    	            <?php
-                    $_SESSION["qty"] = (float)$_POST["selqty"];
-                    $_SESSION["price"] = (float)$_POST["selsize"];
+                    $_SESSION["price"] = $_POST["selsize"];
                     ?>
                 <select name="selcolour">
    	                    <option>white</option>
